@@ -11,10 +11,18 @@ body{
   align-items: center;
   height: 100vh;
 }
-.center-container{
-  height: 500px;
-  width: 350px;
+.center-container {
+  transform: translateX(-5%);
 }
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .center-container {
+    transform: translateX(0);
+  }
+}
+
+
 .app-heading{
   padding: 4px;
   color: white;  
@@ -92,3 +100,7 @@ body{
 .icon-delete:hover{
   color: red;
 }
+
+
+
+
